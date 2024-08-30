@@ -13,6 +13,8 @@ pip install ntscraper
 to run this program you have to clone this repository to your local machine using:
 ```
 git clone https://github.com/arshjameel/TweetGen.git
+```
+```
 cd TweetGen
 ```
 Then:
