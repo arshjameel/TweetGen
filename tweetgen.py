@@ -9,14 +9,11 @@ class TweetGenApp:
     def __init__(self, root):
         self.root = root
         self.root.title("TweetGen")
+        self.root.minsize(500, 500)
         
         # Initialize tweet list and index
         self.tweet_list = []
         self.current_tweet_index = -1
-        
-        # convenient window size
-        self.root.minsize(500, 500)
-        #self.root.maxsize(500, None)
         
         self.default_font = tkfont.Font(family="Consolas", size=12)  # specify font
         self.bg_color = "#ebdbb2"  # dark background
@@ -75,12 +72,9 @@ class TweetGenApp:
 
     def scrape_random_tweet(self, username):
         scraper = Nitter(log_level=0, skip_instance_check=False)  # initialize the scraper with a nitter instance
-
         try:
             tweets = scraper.get_tweets(username, mode='user', number=50) # set number of tweets to fetch per user
-
-            # Check if 'tweets' is a dictionary and access the correct key
-            if isinstance(tweets, dict) and 'tweets' in tweets:
+            if isinstance(tweets, dict) and 'tweets' in tweets: # check if 'tweets' is a dictionary and access the correct key
                 self.tweet_list = tweets['tweets']
             else:
                 self.tweet_list = tweets
