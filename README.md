@@ -17,7 +17,7 @@ git clone https://github.com/arshjameel/TweetGen.git
 ```
 cd TweetGen
 ```
-Then:
+Then run the program with:
 ```
 python .\tweetgen.py
 ```
