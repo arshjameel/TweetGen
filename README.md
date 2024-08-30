@@ -26,3 +26,4 @@ python .\tweetgen.py
 * This project uses the ntscraper library to fetch tweets from various [Nitter](https://github.com/zedeus/nitter?tab=readme-ov-file) instances, which are used as an alternative Twitter frontend.
 * Some Nitter instances may not work properly due to recent changes in Twitter's [Terms of Service](https://x.com/en/tos). If a given username's tweets do not load, you can try to fetch tweets again.
 * Moreover, due to the previously mentioned updated Twitter ToS policies, **it is strictly recommended to use this project in an academic manner**, and not to misuse the code in any way. This ensures that you, or any remaining Nitter instances, do not get banned.
+* Also check out [QuoteGen](https://github.com/arshjameel/QuoteGen). It is a sister app of TweetGen. The original program was modified to provide tweets from a number of preset Twitter accounts. It allows the program to behave as an FYP where you get your favourite accounts' most recent tweets.
